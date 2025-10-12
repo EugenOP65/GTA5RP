@@ -108,11 +108,11 @@ while True:
         for href, title, forum_title, author, timestamp in links:
             match forum_title:
                 case "Верховный суд":
-                    tag_list = ["⚖️ Верховный суд"]
+                    tag_list = ["<@&1332717305154637896> <@&1316096152113905665>"]
                 case "Окружной суд":
-                    tag_list = ["⚖️ Окружной суд"]
+                    tag_list = ["<@&1316096160443666504>"]
                 case "УДО и Реабилитация осуждённых":
-                    tag_list = ["⚖️ УДО и Реабилитация осуждённых"]
+                    tag_list = ["<@&1316096152113905665> <@&1316096203385213001>"]
             for forum_url in get_all_forum_urls():
                 if not href.startswith("http"):
                     href = requests.compat.urljoin(forum_url, href)
