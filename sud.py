@@ -26,7 +26,7 @@ NAME_SELECTOR = "ul.structItem-parts > li:not(.structItem-startDate) > a"
 TIME_SELECTOR = "li.structItem-startDate > a > time"
 CHECK_INTERVAL = 60
 SEEN_FILE = "supremecourt_links.txt"
-webhook_url = "https://discord.com/api/webhooks/1424215766445719652/XJmp_Y7f6KTNJ41eKxaQAD0z0KJax4jhl2-SdIrtssoBqRdL6Ty4olwF_VAZGXhR0Ten"
+webhook_url = "https://discord.com/api/webhooks/1381742096439840922/wDjVvxF9lwnpwFA0vOqu9MqjibToFCPIk44bcnKi_XHPZHLidhnQYG9WtNvk6VrsLEwA"
 
 def get_all_forum_urls():
     """Возвращает список всех URL форумов"""
@@ -130,4 +130,5 @@ while True:
 
     except Exception as e:
         print(f"⚠️ Ошибка: {e}")
+
         time.sleep(CHECK_INTERVAL)
